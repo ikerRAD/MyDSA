@@ -187,6 +187,7 @@ public class Person implements Comparable<Person>{
 				
 				p.friendList.remove(this);
 				this.friendList.remove(p);
+				SocialList.changed=true;
 			} catch (EmptyCollectionException | ElementNotFoundException e) {
 				System.out.println("\n "+"\u001B[31m"+"friend already removed or has never existedd"+"\u001B[0m \n");
 			}
@@ -204,6 +205,7 @@ public class Person implements Comparable<Person>{
 			//p1=p2=null;
 			this.friendList.add(f);
 			f.friendList.add(this);
+			SocialList.changed=true;
 			
 		}
 		/**

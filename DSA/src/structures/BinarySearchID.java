@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 import Exceptions.ElementNotFoundException;
 import Social.Person;
+import Social.PersonForGraph;
 /**
  * Binary search tree for the class person ordered by id's
  * @author ikerb
@@ -52,6 +53,41 @@ public class BinarySearchID extends LinkedBinarySearchTree<Person> implements It
 			ret.addToTail(it.next());
 		}*/
 		return ret;
+	}
+	/**
+	 * Method that creates an array of PersonForGraph in order to introduce the class Person to a graph
+	 * @return the array
+	 */
+	public PersonForGraph[] toValueArray() {
+		PersonForGraph[] values=new PersonForGraph[size()];
+		inorderToArray(root, values);//sets the list with all the people
+		Person theP;
+		int nF,cF;
+		for(int i=0;i<values.length;i++) {//sets all the friendships with the new class
+			theP=values[i].thePerson;
+			nF=theP.getNumFriends();
+			cF=0;
+			for(int j=i+1;j<values.length&&cF!=nF;j++) {
+				if(theP.isFriend(values[j].thePerson)) {
+					cF++;
+					values[i].addToTheList(values[j]);
+					values[j].addToTheList(values[i]);
+				}
+			}
+			
+		}
+		return null;
+		
+	}
+	
+	private void inorderToArray (BinaryTreeNode<Person> node, PersonForGraph[] tempList)  {
+		if (node != null) {	
+			inorderToArray (node.left, tempList);
+			//node.element
+			int i=PersonForGraph.numP;
+			tempList[i]=new PersonForGraph(node.element,i);
+			inorderToArray (node.right, tempList);
+		}
 	}
 	/**
 	 * converts the tree into a tree ordered by fame
