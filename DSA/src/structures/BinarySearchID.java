@@ -60,6 +60,7 @@ public class BinarySearchID extends LinkedBinarySearchTree<Person> implements It
 	 */
 	public PersonForGraph[] toValueArray() {
 		PersonForGraph[] values=new PersonForGraph[size()];
+		PersonForGraph.numP=0;
 		inorderToArray(root, values);//sets the list with all the people
 		Person theP;
 		int nF,cF;
@@ -76,7 +77,7 @@ public class BinarySearchID extends LinkedBinarySearchTree<Person> implements It
 			}
 			
 		}
-		return null;
+		return values;
 		
 	}
 	
