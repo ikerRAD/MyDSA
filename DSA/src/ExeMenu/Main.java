@@ -36,13 +36,13 @@ public class Main {
 		while(!logout) {
 			System.out.println("\u001B[33m"
 					+ "-------------------------------------------------------"
-					+ "\n|"+"\u001B[27m"+"Show someone�s friends ordered alphabetically----1   "+ "\u001B[33m"+"|"
-					+ "\n|"+"\u001B[27m"+"Show someone�s friends ordered by fame----2          "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"Show someone´s friends ordered alphabetically----1   "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"Show someone´s friends ordered by fame----2          "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"show all the people ordered alphabetically----3      "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"show all the people ordered by fame----4             "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"check existence of someone----5                      "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"Print all the people of the network at a .txt----6   "+ "\u001B[33m"+"|"
-					+ "\n|"+"\u001B[27m"+"print someone�s data----7                            "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"print someone´s data----7                            "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"Print all the relationships to a .txt----8           "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"add another people file----9                         "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"add relationships file----10                         "+ "\u001B[33m"+"|"
@@ -150,7 +150,10 @@ public class Main {
 	}
 	
 	
-	
+	/**
+	*Method that prints all the people from the network separated into classes based on the favourite movies
+	*@param soc	the network
+	*/
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void splitInClasses(SocialList soc) {
 		LinkedList<Person> per;
@@ -231,17 +234,17 @@ public class Main {
 		data[2]=s.nextLine();
 		System.out.println("\u001B[33m"+"Now write the birthday:"+"\u001B[0m");
 		data[3]=s.nextLine();
-		System.out.println("\u001B[33m"+"What´s the gender?"+"\u001B[0m");
+		System.out.println("\u001B[33m"+"WhatÂ´s the gender?"+"\u001B[0m");
 		data[4]=s.nextLine();
 		System.out.println("\u001B[33m"+"Where were the person born?"+"\u001B[0m");
 		data[5]=s.nextLine();
-		System.out.println("\u001B[33m"+"Type where is the person´s current home:"+"\u001B[0m");
+		System.out.println("\u001B[33m"+"Type where is the personÂ´s current home:"+"\u001B[0m");
 		data[6]=s.nextLine();
 		System.out.println("\u001B[33m"+"Where did the person study? separate witn ';' if there are more than one center:"+"\u001B[0m");
 		data[7]=s.nextLine();
 		System.out.println("\u001B[33m"+"Where have the person worked? Tell us your carreer, separate with ';' the different places:"+"\u001B[0m");
 		data[8]=s.nextLine();
-		System.out.println("\u001B[33m"+"Separating with the method used in the preivious sections, create a list of the person´s favourite films:"+"\u001B[0m");
+		System.out.println("\u001B[33m"+"Separating with the method used in the preivious sections, create a list of the personÂ´s favourite films:"+"\u001B[0m");
 		data[9]=s.nextLine();
 		System.out.println("\u001B[33m"+"We are almost done! type the group code please:"+"\u001B[0m");
 		data[10]=s.nextLine();
@@ -295,7 +298,7 @@ public class Main {
 			n.addFriend(f);
 			//so.updateFame(f, n);
 		} catch (ElementNotFoundException e) {
-			System.out.println("\n \u001B[31m"+"one or the both id´s does/do not exist"+"\u001B[0m \n");
+			System.out.println("\n \u001B[31m"+"one or the both idÂ´s does/do not exist"+"\u001B[0m \n");
 		} catch (AlreadyAddedFriend e){
 			System.out.println("\n \u001B[31m"+"relation already added"+"\u001B[0m \n");
 		}
@@ -321,7 +324,7 @@ public class Main {
 			n.removeFriend(f);
 			//so.updateFame(f, n);
 		} catch (ElementNotFoundException e) {
-			System.out.println("\n \u001B[31m"+"one or the both id´s does/do not exist"+"\u001B[0m \n");
+			System.out.println("\n \u001B[31m"+"one or the both idÂ´s does/do not exist"+"\u001B[0m \n");
 		} 
 	
 			
@@ -359,7 +362,7 @@ public class Main {
 			Person p=soc.findPerson(id);
 			System.out.println("\u001B[33m"+id+" has "+p.getNumFriends()+" friends");
 			if(p.getNumFriends()!=0) {
-				System.out.println("what will you do now? \n type 1 to print the friends´ info \n type 2 just to print the friends´ id´s \n type anything else to do nothing"+"\u001B[0m");
+				System.out.println("what will you do now? \n type 1 to print the friendsÂ´ info \n type 2 just to print the friendsÂ´ idÂ´s \n type anything else to do nothing"+"\u001B[0m");
 				String k=s.nextLine();
 				switch(k) {
 					case "1":
@@ -401,7 +404,7 @@ public class Main {
 			Person p=soc.findPerson(id);
 			System.out.println("\u001B[33m"+id+" has "+p.getNumFriends()+" friends");
 			if(p.getNumFriends()!=0) {
-				System.out.println("what will you do now? \n type 1 to print the friends´ info \n type 2 just to print the friends´ id´s \n type anything else to do nothing"+"\u001B[0m");
+				System.out.println("what will you do now? \n type 1 to print the friendsÂ´ info \n type 2 just to print the friendsÂ´ idÂ´s \n type anything else to do nothing"+"\u001B[0m");
 				String k=s.nextLine();
 				
 				switch(k) {

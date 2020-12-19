@@ -15,11 +15,10 @@ import Exceptions.*;
 import structures.BinarySearchID;
 import structures.LinkedBinarySearchTree;
 import structures.LinkedList;
-import structures.PersonGraph;
 import structures.TableWithCollision;
 /**
  * Class that represents a network
- * @author Iker Pintado, Jon Moríñigo, Iker Fernandez
+ * @author Iker Pintado, Jon MorÃ­Ã±igo, Iker Fernandez
  *
  */
 public class SocialList {
@@ -27,17 +26,7 @@ public class SocialList {
 	 * the list of persons of the network
 	 */
 	private BinarySearchID list;
-	
-	/**
-	 * boolean parameter that says if something in the social list has changed, it will be set to false every time a new graph is created
-	 */
-	public static boolean changed;
-	
-	/**
-	 * parameter for the graph that represents the network, it will always be updated if anything changes in the list
-	 */
-	private PersonGraph theGraph;
-	
+
 	/**
 	 * the only instance of the network--singleton pattern
 	 */
@@ -68,7 +57,6 @@ public class SocialList {
 	private SocialList() {
 		super();
 		list=new BinarySearchID();
-		changed=true;
 	}
 	/**
 	 * method to get the only instance of the class--singleton pattern
@@ -87,7 +75,6 @@ public class SocialList {
 		if(!list.isEmpty()) 
 			if(list.contains(p)) throw new AlreadyAddedPerson("Already added");
 		list.add(p);
-		changed=true;
 		
 	}
 	/**
@@ -107,7 +94,7 @@ public class SocialList {
 				pe.removeFriend(p);
 			}
 		}
-		changed=true;
+		
 		System.out.println("\n \u001B[32m DONE! \u001B[0m \n");
 	}
 	/**
@@ -189,7 +176,6 @@ public class SocialList {
 				
 		
 			sr.close();
-			changed=true;
 		}catch(IOException e) {
 			System.out.println("\n \u001B[31m"+e.getMessage()+"\u001B[0m \n");
 		}
@@ -218,7 +204,6 @@ public class SocialList {
 				
 		
 			sr.close();
-			changed=true;
 		}catch(IOException e) {
 			System.out.println("\n \u001B[31m"+e.getMessage()+"\u001B[0m \n");
 		}
@@ -275,11 +260,10 @@ public class SocialList {
 				}
 					
 			}
-			sr.close();
-			changed=true;
 			if(det>0)
 				throw new ElementNotFoundException("\n \u001B[31m"+"There where "+det+" impossible to stablish relations"+"\u001B[0m \n");
 				
+			sr.close();
 			
 		}catch(FileNotFoundException e) {
 			System.out.println("\n \u001B[31m"+"file not found"+"\u001B[0m \n");
@@ -335,12 +319,10 @@ public class SocialList {
 					}
 				}
 			}
-			changed=true;
-			sr.close();
 			if(det>0)
 				throw new ElementNotFoundException("\n \u001B[31m"+"There where "+det+" impossible to remove relations"+"\u001B[0m \n");
 				
-			
+			sr.close();
 			
 		}catch(FileNotFoundException e) {
 			System.out.println("\n \u001B[31m"+"file not found"+"\u001B[0m \n");
@@ -429,7 +411,7 @@ public class SocialList {
 	}
 	/**
      * This method prints all the friends of a user with a given surname.
-     * If there´s no users with the given surname nothing is printed
+     * If thereÂ´s no users with the given surname nothing is printed
      * @param surname    the surname to search
      */
     public void searchFriendsBySurname(String surname) {
@@ -444,7 +426,7 @@ public class SocialList {
             }
         }
         if(i==0) {
-            System.out.println("There isn�t any user with the surname " + surname + ".");
+            System.out.println("There isn´t any user with the surname " + surname + ".");
         }
     }
 	/**
@@ -501,9 +483,10 @@ public class SocialList {
 		
 	}
 	/**
-	 * method that retrieves all the people into classes depending on their favourite movies
-	 * @return the table of the classes
-	 */
+	*
+	*Method that retrieves all the people into clases based on the favourite movies
+	*@return a TableWithCollision that has the size of the number of different classes and in each index has all the people from that class
+	*/
 	public TableWithCollision<String, Person> retrieveIntoClassesFromMovies(){
 		TableWithCollision<String, Person> reta=new TableWithCollision<String, Person>();
 		for(Person p:list) {

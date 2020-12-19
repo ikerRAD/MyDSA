@@ -9,7 +9,7 @@ import Exceptions.ElementNotFoundException;
 import Social.Person;
 
 
-class testPeople {
+class TestPeople {
 	
 	Person pe1,pe2,pe3,pe4,pe5;
 	
@@ -108,15 +108,15 @@ class testPeople {
 	@DisplayName("Test case for the method AddFilm()")
 	void testAddFilm() {
 		pe1.addFilm("FFF");
-		assertEquals(pe1.getPersonData()[9],"FFF;f1");
+		assertEquals(pe1.getPersonData()[9],"f1;FFF");
 		pe2.addFilm("ZZZ");
-		assertEquals(pe2.getPersonData()[9],"ZZZ;f2");
+		assertEquals(pe2.getPersonData()[9],"f2;ZZZ");
 		pe3.addFilm("MMM");
-		assertEquals(pe3.getPersonData()[9],"MMM;f3");
+		assertEquals(pe3.getPersonData()[9],"f3;MMM");
 		pe4.addFilm("QQQ");
-		assertEquals(pe4.getPersonData()[9],"QQQ;f4");
+		assertEquals(pe4.getPersonData()[9],"f4;QQQ");
 		pe5.addFilm("XXX");
-		assertEquals(pe5.getPersonData()[9],"XXX;f5");
+		assertEquals(pe5.getPersonData()[9],"f5;XXX");
 	}
 	
 	@Test
