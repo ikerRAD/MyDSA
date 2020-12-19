@@ -1,0 +1,137 @@
+Agnetta33,Agnetta,Bensson,1-1-1940,female,Sweden,London,Stockholm,Stockholm;London;Oslo;Paris,Cinema Paradiso;Reservoir Dogs;The Intouchables;To Kill a Mockingbird,G0001
+
+Aitor001,Aitor,Iturrioz,29-06-1988,male,Zumarraga,Donosti,EHU,Computer_Science,Persona,G6105
+
+Alejo,Mikel Alejo,Barcina,1-1-1994,male,Ordizia,Ordizia,Donostia,,Shrek;The Lion King;Toy Story,G6102
+
+Alv01,Alvaro,Calo,20-07-1992,male,Donostia,Donostia,Calasanz;Arquitectura,,The A-Team;The Expendables;True Grit,G6101
+
+And01,Ander,Maillo,14-07-1991,male,Irun,Irun,Aleman;Arquitectura,,Robin Hood;The Bounty Hunter;Valentine's Day,G6101
+
+And02,Andrea,Fernandez,07-02-1991,female,Donostia,Donostia,Lizeo;Psicologia,,Eat Pray Love;Percy Jackson & the Olympians: The Lightning Thief;Sex and the City 2,G6101
+
+Arantza22,Aranzazu,Bidaurreta,3-3-1833,female,Larraitz,Amezketa,Tolosa,Paris;Nice,Double Indemnity;Goodfellas;Taxi Driver,G0001
+
+Bea01,Beatriz,Penas,08-01-1992,female,Irun,Irun,Aleman;Psicologia,,Due Date;Robin Hood;Sex and the City 2,G6101
+
+Bizenta223,Bizenta,Juaristi,1-1-1501,female,Azkoitia,La Paz,Onati,Bolivia,12 Angry Men;Fight Club,G0001
+
+CHA29,CHAU,COLVARD,21-4-1948,female,Bordeaux,Kurdzhali,Saint Paul;Rasht,Eisenstadt,Pirates 2: Dead Man’s Chest,G0000
+
+CRI57,CRISTI,PARADOWSKI,2-7-1903,female,Marib,Bethanien,Las Tablas,Ouahigouya;Czestochowa,Harry Potter 2: Chamber of Secrets,G0000
+
+Carla001,Carla,Aldabaldetrecu,4-11-1994,female,Donostia,Donostia,UPV,Donostia,Despicable_Me;Grown_Ups,G6106
+
+Cris01,Cristilaine,Rithyele,01-01-1991,female,Ribeiro De Aquino,Ribeiro de Aquino,Calasanz;Informatika,Donostia,Jackass 3D;Robin Hood;The Social Network,G6101
+
+ETH28,ETHAN,VIOREL,18-4-1979,male,New Plymouth,Tokyo,Daloa;Zacatecoluca;Luan Chau,Cherkasy;Haka;Kaesong;Bondoukou,American Beauty;Chicago;Lord of the Rings: The Return of the King;Raiders of the Lost Ark;Run Lola Run;Spider-Man 2;Star Wars;The Good Girl,G0000
+
+Eid01,Eider,Iturralde,15-05-1989,female,Donostia,Donostia,Lizeo;Deusto,Donostia;Usurbil,Avatar;The Tourist,G6101
+
+Eri01,Erik,Rodrigues,15-04-1991,male,Donostia,Donostia,Lizeo;Informatika,,Grown Ups;Hot Tub Time Machine,G6101
+
+Esti374,Estibaliz,Matsuki,12-7-1988,female,Tokyo,Santiago de Chile,Salesianas;Mendebaldea,Canada;Sahara;Berlin;Lenningrade,Der Untergang;Schindler's list,G6103
+
+Fran451,Francisco,Zumalakarregui,23-2-1983,male,Errenteria,Frnace,Armentia Ikastola;Koldo Mitxelena;EHU,Aizkorri;Anboto;Madrid,Brigadas rojas: La banda Baader Meinhof;Munich;Operacion Ogro,G6103
+
+Giefsefsdfesf1,Ga,Facci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gila11,isella,Ficci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gilonxz,Giluno,Gonzalez,12-09-1982,male,Lasarte,Valencia,Calasanz;Informatika,Valencia;Vitoria;Donostia,Avatar;Casablanca,G6101
+
+Girwfs11,Gisa,Fai,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gis,Gis,Fabci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gis1,Gla,Faci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gisdfsd11,Gislla,Fab,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gisefsde11,Gella,Fa,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gisefsfd11,Gisela,icci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gisella11,Gisella,Fabricci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gla11,Gilla,Fabcci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+Gonz01,Gonzalo,Gonzalez,12-09-1982,male,Valencia,Lasarte,Calasanz;Informatika,Valencia;Vitoria;Donostia,Avatar;Casablanca,G6101
+
+Gor01,Gorka,Vitoria,14-02-1988,male,Donostia,Donostia,Zurriola;Informatika,Donostia;Belfast,Jackass 3D;Sherlock Holmes,G6101
+
+Gwsfa11,Glla,Ficci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+HER20,HERMAN,SMITHWICK,15-9-1919,male,Arusha,Baquerizo Moreno,Nancy,Osaka;Washington D.C.;Schefferville;Libreville,ET;Jurassic Park;Star Wars;The Upside of Anger,G0000
+
+Igor,Igor,Cejudo,23-3-1989,female,Donostia,Donostia,Donostia,Donostia;Amsterdam,ET;Titanic,G6102
+
+Iker,Iker,Salmon,19-4-1979,male,Bilbao,Donostia,Donostia,Bilbao;Pamplona,Batman;ET,G6102
+
+Jandrol094,Alejandro,Andoain,23-4-1983,male,Moscow,Donostia,La Salle,Donostia;Kiev,American Pie;Men in Black,G6103
+
+Javi,Javier,Frias,7-5-1993,male,Arrasate,Zumaia,Donostia,,Batman;ET;Ghost Busters,G6102
+
+John111,John,Obamy,6-6-1966,male,Connecticut,The White House,Brooklyn;Yale,Hawaii;Iowa,Forrest Gump;Seven Samurai;The Shawshank Redemption,G0001
+
+Jon232,Jon,Garcia,3-3-1990,male,Donostia,Donostia,LaSalle;UPV/EHU;Stanford,Connecticut,Star Wars;The Godfather;The Godfather: Part II,G0001
+
+Laura001,Laura,Gran,19-6-1994,female,Donostia,Donostia,UPV,Donostia,Agora;Despicable_Me,G6106
+
+Leire002,Leire,Roa,7-2-1993,female,Irun,Irun,UPV,Donostia,Despicable_Me;Love_And_Other_Drugs,G6106
+
+Leire1,Leire,Alba-Aguirre,5-5-1955,female,Tolosa,Seville,Insti Penaflorida;Imperial College,London;Madrid;New York,Casablanca;Forrest Gump;The Matrix,G0001
+
+Liza99,Elizabeth,Taylor-Gardner,5-5-1935,female,Rome,Boston,New York,Paris,Cleopatra;Hold High the Torch;The White Cliffs of Dover,G0001
+
+Luis01,Luis,Miguel,05-11-1992,male,Galdakao,Galdakao,Elesalde;Informatika,,Knight and Day;The Town;Yogi Bear 3D,G6101
+
+Maria001,Maria,Garcia,05-06-1994,female,Eibar,Donosti,EHU,Computer_Science,Despicable_Me,G6105
+
+Markel001,Markel,Saez_de_Jauregui,02-08-1993,male,Elorrio,Donosti,EHU,Computer_Science,El_Bueno_El_Feo_y_el_Malo, G6105
+
+Markel002,Markel,Chen,01-01-1990,male,Bacelona,Bolasos_de_Calatraba,Donosti,Cooking,Penguin,G6105
+
+Marta059,Marta,Garcia,8-5-1994,female,Donostia,Madrid,UPV,Donostia,Babies;Ramona_and_Beezus,G6106
+
+Mik01,Mikel,Dalmau,25-03-1991,male,Galdakao,Galdakao,Elesalde;Informatika,Galdakao,Red;The A-Team,G6101
+
+Mike673,Mikel,Garcia,11-8-1980,male,Donostia,Donostia,Teresianas;Santo Tomas,Donostia;Madrid;Paris,Casablanca;Taxi�Driver,G6103
+
+Mikel34,Jon Mikel,Lopez de Haro,9-9-1700,male,Bilbao,Caracas,Lizeoa;UPV/EHU,Caracas,Forrest Gump;The Lord of the Rings,G0001
+
+Miriam21,Miriam Cristina,de la Sierra,2-2-1982,female,Zamora,Helsinki,Madrid;London;New York;Casablanca,Casablanca,Casablanca;The Silence of the Lambs,G0001
+
+OSV49,OSVALDO,BRISTER,9-7-1949,male,Jelenia Gora,Brasov,Chinandega,Diyarbakir;Abakan,Spider-Man 2;Star Wars;The Empire Strikes Back,G0000
+
+Olatz001,Olatz,Castano,15-11-1994,female,Barakaldo,Donosti,EHU,Computer_Science,Kick-Ass,G6105
+
+Olivia002,Olivia,Olazabal,28-3-1994,female,Irun,Irun,UPV,Donostia,Dear_John;Despicable_Me,G6106
+
+RAM35,RAMIRO,LAVALLIE,7-1-1999,male,Santa Clara,San Felipe,Popondetta;Barinas;Fergana,Louang Namtha;Mata-Utu,Harry Potter 1: Sorcerer’s Stone;Home Alone;Run Lola Run;Star Wars,G0000
+
+Roberto22,Roberto,Egia,4-4-1933,male,Vitoria-Gasteiz,Vitoria-Gasteiz,The Becket School;Paris-Sorbonne,Paris;Vitoria-Gasteiz,Alien;Life is Beautiful;Toy Story 3,G0001
+
+Xabi112,Xabier,Lete,1-1-1901,male,Madrid,Lisbon,CollegeA;Birmingham,Madrid;Lisbon;London,The Godfather,G0001
+
+ainhize90,Ainhize,Goenaga,8-1-1990,female,Donostia,Donostia,Peña Florida;Usandizaga,Euskadi;Bolonia,Los Miserables,G6104
+
+asdfa59,Asdrubal,Farruquito,8-8-1959,male,Donostia,Donostia,Jesuitinas,Nigeria;Colombia,Thirteen;Titanic,G6104
+
+ella11,Gise,bricci,3-3-1993,female,Torino,Donostia,Rome;UPV/EHU,Rome;Madrid;Donostia,Princess Mononoke;Star Wars: Episode VI - Return of the Jedi;The Lion King;The Third Man,G0001
+
+feree,quien,Gonzalez,12-09-1982,male,Galdakao,Lasarte,Calasanz;Informatika,Valencia;Vitoria;Donostia,Avatar;Casablanca,G6101
+
+guilherme85,Guilherme,Bussi,26-11-1985,male,brasil,vitoria,unamuno,vitoria;beirut;paris,fast and the furious;shrek,G6107
+
+igor89,Igor,Cortes,23-3-1989,male,Donostia,Donostia,Axular-Lizeoa,Euskadi;Amsterdam,ET;Titanic,G6104
+
+jon89,Jon,Garrido,2-2-1989,male,Donostia,Donostia,Amara-Berri;Usandizaga-Peñaflorida,donostia;renteria,amelie;la vida es bella,G6107
+
+markel94,Markel,Sanz,14-9-1994,male,Donostia,Donostia,Zubiri-Manteo,London;Euskadi,Gladiator,G6104
+
+mircea92,Mircea,Dumitru,30-10-1992,male,romania,tolosa,Usandizaga-Peñaflorida,donostia,american history x;the family man,G6107
+
+paquito78,Paquito,Sanz,25-12-1978,male,usa,werner-von-gymnasium,paris,markina,human centipede;kill bill,G6107
+
+
