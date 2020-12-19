@@ -105,9 +105,7 @@ public class TestBinarySearchId {
 		
 	}
 	
-	@Test
-	@DisplayName("Test for BianarySearchID's toValueArray() method ")//TODO
-	public void toValueArrayTest() {}
+	
 	
 	
 }
