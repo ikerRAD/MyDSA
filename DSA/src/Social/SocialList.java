@@ -11,15 +11,17 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 import Exceptions.*;
+import GraphTraversals.BreadthFirstPathsFriendships;
 //import structures.BinarySearchFriends;
 import structures.BinarySearchID;
 import structures.LinkedBinarySearchTree;
 import structures.LinkedList;
 import structures.PersonGraph;
+import structures.Stack;
 import structures.TableWithCollision;
 /**
  * Class that represents a network
- * @author Iker Pintado, Jon Moríñigo, Iker Fernandez
+ * @author Iker Pintado, Jon Morinigo, Iker Fernandez
  *
  */
 public class SocialList {
@@ -229,7 +231,6 @@ public class SocialList {
 	 * @param the name of the file
 	 * @throws ElementNotFoundException if one person of the file is not in the list
 	 */
-	@SuppressWarnings("resource")
 	public void setFriendships(String s) throws ElementNotFoundException{
 		String splitBy=",";
 		String[] friends;
@@ -290,7 +291,6 @@ public class SocialList {
 	 * @param name of the file
 	 * @throws ElementNotFoundException if some name on the file does not appear in the network
 	 */
-	@SuppressWarnings("resource")
 	public void removeFriendships(String s) throws ElementNotFoundException{
 		String splitBy=",";
 		String[] friends;
@@ -472,6 +472,7 @@ public class SocialList {
 			System.out.println(prin);
 		}
 	}
+	
 	/**
 	 * given a filename retrieves all the home places of the people of the file
 	 * @param filename :the name of the file
@@ -500,6 +501,7 @@ public class SocialList {
 		}
 		
 	}
+	
 	/**
 	 * method that retrieves all the people into classes depending on their favourite movies
 	 * @return the table of the classes
@@ -511,6 +513,56 @@ public class SocialList {
 		}
 		return reta;
 	}
+	
+	
+	public void retrieveShortestChain(Person from,Person to) {
+		PersonForGraph[] valu;
+		if(changed) {
+			valu=list.toValueArray();
+			theGraph=new PersonGraph(valu);
+			changed=false;
+		}else {
+			valu=theGraph.getValues();
+		}
+		int s=-1,v=-1,i=0;
+		while(i<valu.length&&(s==-1||v==-1)) {//find the vertices that represent the persons in the graph
+			if(valu[i].thePerson.equals(from)) {
+				s=i;
+			}
+			if(valu[i].thePerson.equals(to)) {
+				v=i;
+			}
+			i++;
+		}
+		if(s!=-1 && v!=-1) {
+			BreadthFirstPathsFriendships traverser=new BreadthFirstPathsFriendships(theGraph, s);
+			String print;
+			if(traverser.hasPathTo(v)) {
+				String card="st";
+				i=1;
+				Stack<Person> path=traverser.pathTo(v);
+				print="\u001B[33m"+"The chain between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[33m"+" and "+"\u001B[36m"+to.getPersonData()[0]+" is:\n \n";
+				Person poped;
+				while(!path.isEmpty()) {
+					if(i==2)		card="nd";
+					else if(i==3)	card="rd";
+					else if(i==4)	card="th";
+					poped=path.pop();
+					print=print+"\u001B[33m"+"-----------"+"\u001B[32m"+i+card+"\u001B[33m"+"---------- "+"\u001B[0m"+" \n"+
+							"\u001B[36m"+"Id: "+poped.getPersonData()[0]+"\u001B[0m"+" \n"+
+							"\u001B[36m"+"Name: "+poped.getPersonData()[1]      +"\u001B[0m"+" \n"+
+			                "\u001B[36m"+"Surname: "+poped.getPersonData()[2]   +"\u001B[0m"+" \n";
+					i++;	
+				}
+			}else {
+				print="\u001B[31m"+"There is no chain of friends between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[31m"+" and "+"\u001B[36m"+to.getPersonData()[0]+"\u001B[0m";
+			}
+			System.out.println(print);
+		}else {
+			System.out.println("\n \u001B[31m"+"One of the elements has not been found"+"\u001B[0m \n");
+		}
+	}
+	
 	/**
 	 * method mainly used at Junit5 tests, destroys the instance of the class
 	 */

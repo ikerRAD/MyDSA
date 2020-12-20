@@ -21,7 +21,6 @@ public class TableWithCollision<K, V> {
 		 * the parameter for the key
 		 */
 		public K key;
-		@SuppressWarnings("unused")
 		/**
 		 * The list off all the objects in the same class
 		 */

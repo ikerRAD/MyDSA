@@ -62,6 +62,8 @@ public class Main {
 					+ "\n|"+"\u001B[27m"+" the people of the file-----------------------20     "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"split all the people into classes depending----21    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"  on their favourite movies--------------------21    "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"given 2 id's, retrieve the --------------------22    "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"     shortest friend-chain---------------------22    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"log out with any other number                        "+ "\u001B[33m"+"|"
 					+ "\n-------------------------------------------------------"+"\u001B[0m" );
 			opt=s.nextLine();
@@ -139,6 +141,9 @@ public class Main {
 				case "21":
 					splitInClasses(soc);
 					break;
+				case "22":
+					shortestPath(soc);
+					break;
 				default:
 					System.out.println("\n \u001B[32m"+"See you soon!!!!"+"\u001B[0m");
 					logout=true;
@@ -149,8 +154,31 @@ public class Main {
 		s.close();
 	}
 	
-	
-	
+	/**
+	 * Method that retrieves the shortest path between the 2 people
+	 * @param soc the network
+	 */
+	@SuppressWarnings("resource")
+	private static void shortestPath(SocialList soc) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("\u001B[33m"+"Type de id of the first friend:"+"\u001B[0m");
+		String id1=s.nextLine();
+		System.out.println("\u001B[33m"+"Type de id of the second friend:"+"\u001B[0m");
+		String id2=s.nextLine();
+		try {
+			Person f=soc.findPerson(id1);
+			Person t=soc.findPerson(id2);
+			soc.retrieveShortestChain(f, t);
+		} catch (ElementNotFoundException e) {
+			System.out.println("\n \u001B[31m"+"one or the both id's does/do not exist"+"\u001B[0m \n");
+		}
+	}
+
+
+	/**
+	*Method that prints all the people from the network separated into classes based on the favourite movies
+	*@param soc	the network
+	*/
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	private static void splitInClasses(SocialList soc) {
 		LinkedList<Person> per;
