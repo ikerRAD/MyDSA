@@ -64,6 +64,8 @@ public class Main {
 					+ "\n|"+"\u001B[27m"+"  on their favourite movies--------------------21    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"given 2 id's, retrieve the --------------------22    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"     shortest friend-chain---------------------22    "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"given 2 id's, retrieve the --------------------23    "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"     longest friend-chain----------------------23    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"log out with any other number                        "+ "\u001B[33m"+"|"
 					+ "\n-------------------------------------------------------"+"\u001B[0m" );
 			opt=s.nextLine();
@@ -144,6 +146,9 @@ public class Main {
 				case "22":
 					shortestPath(soc);
 					break;
+				case "23":
+					longestPath(soc);
+					break;
 				default:
 					System.out.println("\n \u001B[32m"+"See you soon!!!!"+"\u001B[0m");
 					logout=true;
@@ -153,7 +158,26 @@ public class Main {
 		
 		s.close();
 	}
-	
+	/**
+	 * Method that retrieves the longest path between the 2 people
+	 * @param soc the network
+	 */
+	@SuppressWarnings("resource")
+	private static void longestPath(SocialList soc) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("\u001B[33m"+"Type de id of the first friend:"+"\u001B[0m");
+		String id1=s.nextLine();
+		System.out.println("\u001B[33m"+"Type de id of the second friend:"+"\u001B[0m");
+		String id2=s.nextLine();
+		try {
+			Person f=soc.findPerson(id1);
+			Person t=soc.findPerson(id2);
+			soc.retrieveLongestChain(f, t);
+		} catch (ElementNotFoundException e) {
+			System.out.println("\n \u001B[31m"+"one or the both id's does/do not exist"+"\u001B[0m \n");
+		}	
+	}
+
 	/**
 	 * Method that retrieves the shortest path between the 2 people
 	 * @param soc the network

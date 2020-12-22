@@ -19,14 +19,21 @@ public class PersonGraph {
     private final int V;
     private int E;
     private Bag<Integer>[] adj;  // 
+    /**
+     * List that contains the value of each vertex
+     */
     private PersonForGraph[] val;
-    
+    /**
+     * counts the number of lonely vertices
+     */
+    private int lonely;
    /**
      * Create an empty graph with V vertices.
      * @throws java.lang.IllegalArgumentException if V < 0
      */
     @SuppressWarnings("unchecked")
 	public PersonGraph(PersonForGraph[] valu) {
+    	lonely=0;
         //if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
         this.V = valu.length;
         this.E = 0;
@@ -42,8 +49,10 @@ public class PersonGraph {
         	boolean[] marked=new boolean[V];
         for (int v=0;v<V;v++) {
         	W=val[v].length;
-        	
-        	for(int w=0;w<W;w++) {
+        	if(W==0) {
+        		lonely++;
+        	}
+        	for(int w=0;w<W && adj[v].size()<W;w++) {
         		e=val[v].griendList[w].v;
         		if(!marked[e]) {//if the relationship is not already added
         			addEdge(v,e);
@@ -80,6 +89,13 @@ public class PersonGraph {
      * Return the number of edges in the graph.
      */
     public int E() { return E; }
+    
+    /**
+     * Return the number of non-connected vertices
+     */
+    public int NonConnected() {
+    	return lonely;
+    }
     
     /**
      * Getter of the values array

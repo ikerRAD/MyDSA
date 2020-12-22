@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 import Exceptions.*;
 import GraphTraversals.BreadthFirstPathsFriendships;
+import GraphTraversals.LongPathFinder;
 //import structures.BinarySearchFriends;
 import structures.BinarySearchID;
 import structures.LinkedBinarySearchTree;
@@ -514,7 +515,11 @@ public class SocialList {
 		return reta;
 	}
 	
-	
+	/**
+	 * Method that retrieves the shortest chain of friends between 2 people
+	 * @param from person 1
+	 * @param to person 2
+	 */
 	public void retrieveShortestChain(Person from,Person to) {
 		PersonForGraph[] valu;
 		if(changed) {
@@ -541,7 +546,62 @@ public class SocialList {
 				String card="st";
 				i=1;
 				Stack<Person> path=traverser.pathTo(v);
-				print="\u001B[33m"+"The chain between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[33m"+" and "+"\u001B[36m"+to.getPersonData()[0]+" is:\n \n";
+				print="\u001B[33m"+"The shortest chain between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[33m"+" and "+"\u001B[36m"+to.getPersonData()[0]+" is:\n \n";
+				Person poped;
+				while(!path.isEmpty()) {
+					if(i==2)		card="nd";
+					else if(i==3)	card="rd";
+					else if(i==4)	card="th";
+					poped=path.pop();
+					print=print+"\u001B[33m"+"-----------"+"\u001B[32m"+i+card+"\u001B[33m"+"---------- "+"\u001B[0m"+" \n"+
+							"\u001B[36m"+"Id: "+poped.getPersonData()[0]+"\u001B[0m"+" \n"+
+							"\u001B[36m"+"Name: "+poped.getPersonData()[1]      +"\u001B[0m"+" \n"+
+			                "\u001B[36m"+"Surname: "+poped.getPersonData()[2]   +"\u001B[0m"+" \n";
+					i++;	
+				}
+			}else {
+				print="\u001B[31m"+"There is no chain of friends between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[31m"+" and "+"\u001B[36m"+to.getPersonData()[0]+"\u001B[0m";
+			}
+			System.out.println(print);
+		}else {
+			System.out.println("\n \u001B[31m"+"One of the elements has not been found"+"\u001B[0m \n");
+		}
+	}
+	
+	/**
+	 * Method that retrieves the longest chain of friend between 2 people
+	 * @param from person 1
+	 * @param to person 2
+	 */
+	public void retrieveLongestChain(Person from,Person to) {
+		PersonForGraph[] valu;
+		if(changed) {
+			valu=list.toValueArray();
+			theGraph=new PersonGraph(valu);
+			changed=false;
+		}else {
+			valu=theGraph.getValues();
+		}
+		int s=-1,v=-1,i=0;
+		while(i<valu.length&&(s==-1||v==-1)) {//find the vertices that represent the persons in the graph
+			if(valu[i].thePerson.equals(from)) {
+				s=i;
+			}
+			if(valu[i].thePerson.equals(to)) {
+				v=i;
+			}
+			i++;
+		}
+		if(s!=-1 && v!=-1) {
+			boolean[] cp=new boolean[theGraph.V()];
+			int[] et=new int[theGraph.V()];
+			LongPathFinder.BackTrack(theGraph, 0, s, v, cp, et);
+			Stack<Person> path=LongPathFinder.getSolution();
+			String print;
+			if(path!=null) {
+				String card="st";
+				i=1;
+				print="\u001B[33m"+"The longest chain between "+"\u001B[36m"+from.getPersonData()[0]+"\u001B[33m"+" and "+"\u001B[36m"+to.getPersonData()[0]+" is:\n \n";
 				Person poped;
 				while(!path.isEmpty()) {
 					if(i==2)		card="nd";
