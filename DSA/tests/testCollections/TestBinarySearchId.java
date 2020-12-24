@@ -13,6 +13,7 @@ import Exceptions.AlreadyAddedFriend;
 import Exceptions.ElementNotFoundException;
 
 import Social.Person;
+import Social.PersonForGraph;
 import Social.SocialList;
 import structures.BinarySearchID;
 
@@ -90,7 +91,7 @@ public class TestBinarySearchId {
 
 			
 		} catch (AlreadyAddedFriend e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		tree.add(pe1);
@@ -106,8 +107,44 @@ public class TestBinarySearchId {
 	}
 	
 	@Test
-	@DisplayName("Test for BianarySearchID's toValueArray() method ")//TODO
-	public void toValueArrayTest() {}
+	@DisplayName("Test for BianarySearchID's toValueArray() method ")
+	public void toValueArrayTest() {
+		BinarySearchID tree= new BinarySearchID();
+		tree.add(pe1);
+		tree.add(pe2);
+		tree.add(pe3);
+		tree.add(pe4);
+		tree.add(pe5);
+		try {
+			pe1.addFriend(pe2);
+			pe1.addFriend(pe3);
+			pe1.addFriend(pe4);
+			pe2.addFriend(pe3);
+		} catch (AlreadyAddedFriend e) {}
+		PersonForGraph peg1=new PersonForGraph(pe1, 0);
+		PersonForGraph peg2=new PersonForGraph(pe2, 1);
+		PersonForGraph peg3=new PersonForGraph(pe3, 2);
+		PersonForGraph peg4=new PersonForGraph(pe4, 3);
+		PersonForGraph peg5=new PersonForGraph(pe5, 4);
+		peg1.addToTheList(peg2);
+		peg1.addToTheList(peg3);
+		peg1.addToTheList(peg4);
+		peg2.addToTheList(peg1);
+		peg2.addToTheList(peg3);
+		peg3.addToTheList(peg1);
+		peg3.addToTheList(peg2);
+		peg4.addToTheList(peg1);
+		PersonForGraph[] val=new PersonForGraph[5];
+		val[0]=peg1;
+		val[1]=peg2;
+		val[2]=peg3;
+		val[3]=peg4;
+		val[4]=peg5;
+		PersonForGraph[] valu=tree.toValueArray();
+		for(int i=0;i<5;i++)
+			assertEquals(valu[i],val[i]);
+		
+	}
 	
 	
 }
