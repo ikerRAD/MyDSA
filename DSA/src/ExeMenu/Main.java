@@ -66,6 +66,7 @@ public class Main {
 					+ "\n|"+"\u001B[27m"+"     shortest friend-chain---------------------22    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"given 2 id's, retrieve the --------------------23    "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"     longest friend-chain----------------------23    "+ "\u001B[33m"+"|"
+					+ "\n|"+"\u001B[27m"+"Retrieve all the cliques of the network----24        "+ "\u001B[33m"+"|"
 					+ "\n|"+"\u001B[27m"+"log out with any other number                        "+ "\u001B[33m"+"|"
 					+ "\n-------------------------------------------------------"+"\u001B[0m" );
 			opt=s.nextLine();
@@ -149,6 +150,9 @@ public class Main {
 				case "23":
 					longestPath(soc);
 					break;
+				case "24":
+					soc.retrieveAllTheCliques();
+					break;
 				default:
 					System.out.println("\n \u001B[32m"+"See you soon!!!!"+"\u001B[0m");
 					logout=true;
@@ -158,6 +162,7 @@ public class Main {
 		
 		s.close();
 	}
+
 	/**
 	 * Method that retrieves the longest path between the 2 people
 	 * @param soc the network

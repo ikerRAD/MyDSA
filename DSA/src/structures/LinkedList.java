@@ -281,5 +281,29 @@ public class LinkedList<T> implements ListADT<T>,Iterable<T>{
 			this.addToTail(elem);
 		}
 	}
-
+	/**
+	 * checks if two lists are exactly equals
+	 * @param list- the list to check
+	 * @return true if the two lists have the same elements in the same position
+	 */
+	public boolean Exactlyequals(LinkedList<T> list) {
+		Iterator<T> it1=list.iterator();
+		Iterator<T> it2=this.iterator();
+		if(this.size()!=list.size()) {
+			return false;
+		}else {
+			T t1,t2;
+			while(it1.hasNext() && it2.hasNext()) {
+				t1=it1.next();
+				t2=it2.next();
+				if(!t1.equals(t2)) {
+					return false;
+				}
+			}
+			return true;
+		}
+			
+	}
+	
+	
 }

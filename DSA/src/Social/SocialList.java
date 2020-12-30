@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 import Exceptions.*;
 import GraphTraversals.BreadthFirstPathsFriendships;
+import GraphTraversals.CliqueFinder;
 import GraphTraversals.LongPathFinder;
 //import structures.BinarySearchFriends;
 import structures.BinarySearchID;
@@ -621,6 +622,20 @@ public class SocialList {
 		}else {
 			System.out.println("\n \u001B[31m"+"One of the elements has not been found"+"\u001B[0m \n");
 		}
+	}
+	/**
+	 * Method that retrieves all the cliques of people from the network
+	 */
+	public void retrieveAllTheCliques() {
+		if(changed) {
+			PersonForGraph[] valu=list.toValueArray();
+			theGraph=new PersonGraph(valu);
+			changed=false;
+		}
+		System.out.println("\u001B[33m"+"All the cliques of the network are: \n \n"+"\u001B[0m");
+		CliqueFinder.findCliques(theGraph);	
+		System.out.println("\u001B[33m"+"There are no more cliques, the process has finished"+"\u001B[0m");
+		
 	}
 	
 	/**

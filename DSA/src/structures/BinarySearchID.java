@@ -41,19 +41,7 @@ public class BinarySearchID extends LinkedBinarySearchTree<Person> implements It
 		
 		return this.iteratorInOrder();
 	}
-	/**
-	 * converts the tree into a list
-	 * @return
-	 */
-	public LinkedList<Person> toList(){
-		LinkedList<Person> ret=new LinkedList<Person>();
-		inorder(root,ret);
-		/*Iterator<Person> it=this.iterator();
-		while(it.hasNext()) {
-			ret.addToTail(it.next());
-		}*/
-		return ret;
-	}
+	
 	/**
 	 * Method that creates an array of PersonForGraph in order to introduce the class Person to a graph
 	 * @return the array
@@ -95,17 +83,12 @@ public class BinarySearchID extends LinkedBinarySearchTree<Person> implements It
 	 * @return
 	 */
 	public LinkedList<Person> toFameList(){
-		LinkedList<Person> ret=new LinkedList<Person>();
 		Iterator<Person> it=this.iterator();
 		BinarySearchFriends bin=new BinarySearchFriends();
 		while(it.hasNext()) {
 			bin.add(it.next());
 		}
-		it=bin.iterator();
-		while(it.hasNext()) {
-			ret.addToHead(it.next());
-		}
-		return ret;
+		return bin.toList();
 	}
 	/**
 	 * front-end method for printResidential

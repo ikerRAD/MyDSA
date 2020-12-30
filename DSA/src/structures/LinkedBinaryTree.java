@@ -171,6 +171,17 @@ public class LinkedBinaryTree<T> implements BinaryTreeADT<T>
       
       return tempList.iterator();
    }
+   /**
+    * Performs an inorder traversal and returns an inorder LinkedList
+    * @return an inorder list
+    */
+   public LinkedList<T> toList()
+   {
+      LinkedList<T> tempList = new LinkedList<T>();
+      inorder (root, tempList);
+      
+      return tempList;
+   }
 
    /**
     * Performs a recursive inorder traversal.
