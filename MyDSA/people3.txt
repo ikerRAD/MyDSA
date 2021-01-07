@@ -1,0 +1,12 @@
+olatzpg,olatz,pintado garcía,1997,femenino,vitoria,vitoria,vitoria;san sebastián,vitoria,sutther island,G1op9
+ikerrad,iker,pintado garcía,2001,masculino,vitoria,vitoria,vitoria;san sebastián,,el resplandor,HP679
+javito,javi,aledo sánchez,1997,masculino,vitoria,vitoria,vitoria;bilbao,vitoria,la monja,JP97Y
+olg,olatz,pintado garcía,1997,femenino,vitoria,vitoria,vitoria;san sebastián,vitoria,sutther island,G1op9
+ikad,iker,pintado garcía,2001,masculino,vitoria,vitoria,vitoria;san sebastián,,el resplandor,HP679
+javo,javi,aledo sánchez,1997,masculino,vitoria,vitoria,vitoria;bilbao,vitoria,la monja,JP97Y
+tzpg,olatz,pintado garcía,1997,femenino,vitoria,vitoria,vitoria;san sebastián,vitoria,sutther island,G1op9
+ik,iker,pintado garcía,2001,masculino,vitoria,vitoria,vitoria;san sebastián,,el resplandor,HP679
+ja,javi,aledo sánchez,1997,masculino,vitoria,vitoria,vitoria;bilbao,vitoria,la monja,JP97Y
+olatzpg23,olatz,pintado garcía,1997,femenino,vitoria,vitoria,vitoria;san sebastián,vitoria,sutther island,G1op9
+iker5d,iker,pintado garcía,2001,masculino,vitoria,vitoria,vitoria;san sebastián,,el resplandor,HP679
+javito69,javi,aledo sánchez,1997,masculino,vitoria,vitoria,vitoria;bilbao,vitoria,la monja,JP97Y
