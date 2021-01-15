@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 /**
  * Class for splitting an object V into classes using the key K
- * @author Iker Pintado
+ * @author G612050 
  *
  * @param <K> the key
  * @param <V> the value to split

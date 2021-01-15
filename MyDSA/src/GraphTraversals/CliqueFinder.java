@@ -8,7 +8,11 @@ import Social.Person;
 
 import structures.LinkedList;
 import structures.PersonGraph;
-
+/**
+ * Class that performs a backtracking algorithm to find all the cliques
+ * @author G612050 
+ *
+ */
 public class CliqueFinder {
 	/**
 	 * static parameter for the list of different cliques
@@ -119,9 +123,7 @@ public class CliqueFinder {
 			for(Integer w:g.adj(thi)) {
 				if(!currentClique[w]) {
 					if(cand.contains(w)) {
-						if( g.getValues()[thi].thePerson.isFriend(g.getValues()[w].thePerson)) {
-							candu.addToTail(w);
-						}
+						candu.addToTail(w);
 					}
 				}
 			}

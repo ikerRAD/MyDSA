@@ -2,9 +2,7 @@
  * LinkedBinarySearchTree implements the BinarySearchTreeADT interface 
  * with links.
  * 
- * @author Dr. Lewis
- * @author Dr. Chase
- * @version 1.0, 8/19/08
+ * @author G612050 
  */
 package structures;
 import Exceptions.*;

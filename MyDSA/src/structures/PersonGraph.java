@@ -4,14 +4,8 @@ import Social.PersonForGraph;
 
 
 /**
- *  The <tt>Graph</tt> class represents an undirected graph of vertices
- *  named 0 through V-1.
- *  It supports the following operations: add an edge to the graph,
- *  iterate over all of the neighbors adjacent to a vertex.
- *  Parallel edges and self-loops are permitted.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/51undirected">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class that represents a graph with a Person type class in each vertex
+ * @author G612050 
  */
 
 

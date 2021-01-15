@@ -4,7 +4,7 @@ import Exceptions.FullListException;
 
 /**
  * Person class used to represent graphs
- * @author Iker Pintado
+ * @author G612050 
  */
 public class PersonForGraph {
 	/**

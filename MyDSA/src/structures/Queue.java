@@ -1,32 +1,12 @@
 package structures;
 
-/*************************************************************************
- *  Compilation:  javac Queue.java
- *  Execution:    java Queue < input.txt
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt  
- *
- *  A generic queue, implemented using a linked list.
- *
- *  % java Queue < tobe.txt 
- *  to be or not to be (2 left on queue)
- *
- *************************************************************************/
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *  The <tt>Queue</tt> class represents a first-in-first-out (FIFO)
- *  queue of generic items.
- *  It supports the usual <em>enqueue</em> and <em>dequeue</em>
- *  operations, along with methods for peeking at the top item,
- *  testing if the queue is empty, and iterating through
- *  the items in FIFO order.
- *  <p>
- *  All queue operations except iteration are constant time.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class that represent a linked queue
+ * @author G612050 
  */
 public class Queue<Item> implements Iterable<Item> {
     private int N;         // number of elements on queue

@@ -7,8 +7,8 @@ import Exceptions.EmptyCollectionException;
 import Exceptions.NotEnoughElementsException;
 import Interfaces.ListADT;
 /**
- * linked list for dsa
- *
+ * linked list class
+ *@author G612050 
  */
 public class LinkedList<T> implements ListADT<T>,Iterable<T>{
 	/**

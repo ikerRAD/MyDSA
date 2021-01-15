@@ -1,7 +1,7 @@
 package structures;
 
 /**
- *  @author Lewis and Chase
+ *  @author G612050 
  *
  *  Represents a node in a linked list.
  */

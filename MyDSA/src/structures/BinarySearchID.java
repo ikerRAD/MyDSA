@@ -7,7 +7,7 @@ import Social.Person;
 import Social.PersonForGraph;
 /**
  * Binary search tree for the class person ordered by id's
- * @author ikerb
+ * @author G612050 
  *
  */
 public class BinarySearchID extends LinkedBinarySearchTree<Person> implements Iterable<Person>{

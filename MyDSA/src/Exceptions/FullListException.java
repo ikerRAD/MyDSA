@@ -1,7 +1,7 @@
 package Exceptions;
 /**
  * Exception for when an array is full
- * @author Iker Pintado
+ * @author G612050 
  *
  */
 @SuppressWarnings("serial")

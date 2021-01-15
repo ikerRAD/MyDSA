@@ -23,7 +23,7 @@ import structures.Stack;
 import structures.TableWithCollision;
 /**
  * Class that represents a network
- * @author Iker Pintado, Jon Morinigo, Iker Fernandez
+ * @author G612050 
  *
  */
 public class SocialList {

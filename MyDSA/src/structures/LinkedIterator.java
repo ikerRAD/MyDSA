@@ -3,8 +3,8 @@ package structures;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
- * iteratosrfor dsa
- *
+ * iteratosr the linked list class
+ *@author G612050 
  * 
  */
 public class LinkedIterator<T> implements Iterator<T> {

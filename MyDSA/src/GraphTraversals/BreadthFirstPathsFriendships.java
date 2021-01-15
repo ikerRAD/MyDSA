@@ -8,7 +8,7 @@ import structures.Stack;
 
 /**
  * Graph traversal to know the shortest path
- * @author Iker Pintado
+ * @author G612050 
  *
  */
 

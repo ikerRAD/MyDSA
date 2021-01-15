@@ -9,7 +9,7 @@ import structures.LinkedList;
 import structures.TableWithCollision.Collision;
 /**
  * class to represent the social network
- * @author iker pintado
+ * @author G612050 
  *
  */
 public class Main {

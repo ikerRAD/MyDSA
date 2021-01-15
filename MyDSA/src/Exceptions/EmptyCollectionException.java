@@ -1,7 +1,7 @@
 package Exceptions;
 
 /**
- * @author Lewis and Chase
+ * @author G612050 
  *
  *  Represents the situation in which a collection is empty.
  */

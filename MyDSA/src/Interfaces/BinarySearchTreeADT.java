@@ -1,9 +1,7 @@
 /**
  * BinarySearchTreeADT defines the interface to a binary search tree.
  * 
- * @author Dr. Lewis
- * @author Dr. Chase
- * @version 1.0, 8/19/08
+ * @author G612050 
  */
 
 package Interfaces;

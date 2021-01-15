@@ -3,7 +3,11 @@ package GraphTraversals;
 import Social.Person;
 import structures.PersonGraph;
 import structures.Stack;
-
+/**
+ * Class that performs a backtracking algorithm to find the longest path between two vertices
+ * @author G612050 
+ *
+ */
 public class LongPathFinder {
 	/**
 	 * the biggest number of steps of the last solution

@@ -6,7 +6,7 @@ import Exceptions.ElementNotFoundException;
 import Social.Person;
 /**
  * Binary search tree for the class person ordered by the number of friends
- * @author ikerb
+ * @author G612050 
  *
  */
 public class BinarySearchFriends extends LinkedBinarySearchTree<Person> implements Iterable<Person>{

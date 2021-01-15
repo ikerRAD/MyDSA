@@ -15,7 +15,7 @@ import Exceptions.EmptyCollectionException;
 
 /**
  * Class that represents all the people of a social media
- * @author ikerb
+ * @author G612050 
  *
  */
 
@@ -372,6 +372,11 @@ public class Person implements Comparable<Person>{
 			
 			return this.getPersonData()[0].compareTo(o.getPersonData()[0]);
 		}
+		/**
+		 * CompareTo method for the number of friends, if this person has more friends the outcome is positive, if this person has less friends the outcome is negative, otherwise, it is zero
+		 * @param o
+		 * @return
+		 */
 		public int compareToByFriends(Person o) {
 			
 			return this.getNumFriends()-o.getNumFriends();
